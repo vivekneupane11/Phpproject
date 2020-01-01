@@ -8,7 +8,9 @@ if(isset($_REQUEST['action_type']) && !empty($_REQUEST['action_type'])){
         $userData = array(
             'name' => $_POST['name'],
             'email' => $_POST['email'],
-            'phone' => $_POST['phone']
+            'phone' => $_POST['phone'],
+            'birthday'=>$_POST['birthday']
+
         );
         $insert = $db->insert($tblName,$userData);
         $statusMsg = $insert?'User data has been inserted successfully.':'Some problem occurred, please try again.';

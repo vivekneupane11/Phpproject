@@ -22,8 +22,9 @@ if(!empty($_SESSION['statusMsg'])){
             <tr>
                 <th width="5%">#</th>
                 <th width="20%">Name</th>
-                <th width="30%">Email</th>
-                <th width="20%">Phone</th>
+                <th width="25%">Email</th>
+                <th width="15%">Phone</th>
+                <th width="15%">Birthday</th>
                 <th width="12%">Created</th>
                 <th width="13%"></th>
             </tr>
@@ -37,6 +38,7 @@ if(!empty($_SESSION['statusMsg'])){
                 <td><?php echo $user['name']; ?></td>
                 <td><?php echo $user['email']; ?></td>
                 <td><?php echo $user['phone']; ?></td>
+                <td><?php echo $user['birthday']; ?></td>
                 <td><?php echo $user['created']; ?></td>
                 <td>
                     <a href="edit.php?id=<?php echo $user['id']; ?>" class="glyphicon glyphicon-edit"></a>

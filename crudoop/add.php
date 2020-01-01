@@ -31,6 +31,11 @@
                     <label>Phone</label>
                     <input type="text" class="form-control" name="phone"/>
                 </div>
+               
+                <div class="form-group">
+                    <label>Birthday</label>
+                    <input type="date" class="form-control" name="birthday"/>
+                </div>
                 <input type="hidden" name="action_type" value="add"/>
                 <input type="submit" class="form-control btn-default" name="submit" value="Add User"/>
             </form>
