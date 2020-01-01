@@ -1,0 +1,3 @@
+
+# Please register this in your crontab #
+0 12 * * * curl http://localhost/Phpproject/crudoop/mail.php
